@@ -1,0 +1,17 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "queue.name":"Elastic Search Replication Job Queue",
+  "queue.priority":"NORM",
+  "queue.maxparallel":15.0,
+  "queue.topics":[
+    "search/createpayload/job",
+    "search/scheduled/job"
+  ],
+  "queue.retries:Integer":15,
+  "queue.preferRunOnCreationInstance":false,
+  "queue.threadPoolSize:Integer":0,
+  "queue.retrydelay":2000,
+  "service.ranking:Integer":0,
+  "queue.type":"ORDERED",
+  "queue.keepJobs":false
+}
